@@ -1,5 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
+import CityName from './components/CityName';
+import Details from './components/Details';
 import axios from 'axios';  //axios is a library to manage api calls
 
 
@@ -38,10 +40,15 @@ function App() {
       />
       <button onClick={searchlocation}>submit</button> 
       {/* make sure that data exists first */}
-      <div id='city'> <h3>city name : {data?.name??"Not Available"} </h3> </div> 
-      <div id='country'> <h3>country : {data.sys?.country??"Not Available"} </h3> </div>
-      <div id='temp'> temprature : {data.main?.temp??'Not Available'} </div>   
-      <div id='humidity'>humidity : {data.main?.humidity !=null ? `${data.main.humidity}%` : 'Not Available'}</div>
+      
+        <CityName
+        props={data}
+        />
+        
+        <Details 
+        props={data}
+        />
+
     </div>
   );
 }
