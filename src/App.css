@@ -1,38 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  
+}
+
 .App {
   text-align: center;
+  width: fit-content;
+  height: fit-content;
+  background: linear-gradient(135deg, #1abc9c, #16a085); /* Teal gradient */
+  opacity: 70%; /* Adjusted for better visibility */
+  border-radius: 10px;
+  padding: 20px;
+  color: white; /* Ensures text is readable */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
